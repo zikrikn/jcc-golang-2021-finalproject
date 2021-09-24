@@ -11,13 +11,13 @@ func main() {
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "pong",
-			"name": "Zikri KN",
+			"name": "Zikri KN is Awesome",
 		})
 	})
 
 	r.GET("/hello", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "hello world",
+			"message": "hello world is hmm",
 			"name": "your life",
 		})
 	})
