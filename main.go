@@ -17,14 +17,14 @@ func main() {
 	r.GET("/query", queryHandler)
 	r.POST("/movies", postBooksHandler) //POST untuk meng-create sesuatu
 
-	r.Run("localhost:8888") // nanti bisa di Run() aja untuk di deploy di website
+	r.Run() // nanti bisa di Run() aja untuk di deploy di website
 	//untuk local pake localhost:8080 dulu
 }
 
 func rootHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"message": "pong",
-		"name":    "Zikri KN is Awesome",
+		"name":    "Zikri KN is New",
 	})
 }
 
